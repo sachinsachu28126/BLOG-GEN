@@ -8,7 +8,7 @@ Write a well-structured blog on the topic: "{topic}"
 
 Requirements:
 1. Create a catchy and professional blog title.
-2. Write a blog of around 500-700 words.
+2. Write a blog of around 200-400 words.
 3. Include:
    - Introduction
    - Main Discussion
@@ -28,7 +28,7 @@ Write an easy-to-read blog on the topic: "{topic}"
 
 Requirements:
 1. Create a fun and catchy title.
-2. Write a blog of around 500-700 words.
+2. Write a blog of around 200-400 words.
 3. Include:
    - Introduction
    - Main Discussion
@@ -49,7 +49,7 @@ Write a technical blog on the topic: "{topic}"
 
 Requirements:
 1. Create a precise technical title.
-2. Write a blog of around 500-700 words.
+2. Write a blog of around 200-400 words.
 3. Include:
    - Introduction
    - Technical Concepts
