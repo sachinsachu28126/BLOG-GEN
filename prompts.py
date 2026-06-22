@@ -1,31 +1,69 @@
 def build_prompt(topic, tone):
 
-    prompt = f"""
-    You are an expert blog writer.
+    prompts = {
+        "Professional": f"""
+You are an expert professional blog writer.
 
-    Topic:
-    {topic}
+Write a well-structured blog on the topic: "{topic}"
 
-    Tone:
-    {tone}
+Requirements:
+1. Create a catchy and professional blog title.
+2. Write a blog of around 500-700 words.
+3. Include:
+   - Introduction
+   - Main Discussion
+   - Benefits and Challenges
+   - Future Scope
+   - Conclusion
+4. Use formal and business-oriented language.
+5. Generate 10 SEO keywords.
+6. Generate a professional social media caption.
+7. Use Markdown headings and bullet points.
+""",
 
-    Generate:
+        "Friendly": f"""
+You are a friendly and engaging content writer.
 
-    1. Blog Title
-    2. Detailed Blog Content
-       - Introduction
-       - Main Concepts
-       - Examples
-       - Benefits
-       - Challenges
-       - Future Scope
-       - Conclusion
+Write an easy-to-read blog on the topic: "{topic}"
 
-    3. 15 SEO Keywords
-    4. Social Media Caption
-    5. Call To Action
+Requirements:
+1. Create a fun and catchy title.
+2. Write a blog of around 500-700 words.
+3. Include:
+   - Introduction
+   - Main Discussion
+   - Interesting Examples
+   - Benefits
+   - Conclusion
+4. Use simple, conversational language.
+5. Write as if talking directly to the reader.
+6. Generate 10 SEO keywords.
+7. Generate a friendly social media caption with emojis.
+8. Use Markdown headings and bullet points.
+""",
 
-    Write professionally and in markdown format.
-    """
+        "Technical": f"""
+You are a senior technical writer and software engineer.
 
-    return prompt
+Write a technical blog on the topic: "{topic}"
+
+Requirements:
+1. Create a precise technical title.
+2. Write a blog of around 500-700 words.
+3. Include:
+   - Introduction
+   - Technical Concepts
+   - Architecture or Working Process
+   - Real-world Applications
+   - Advantages and Limitations
+   - Future Developments
+   - Conclusion
+4. Use technical terminology and explain concepts clearly.
+5. Include examples or code snippets if applicable.
+6. Generate 10 SEO keywords.
+7. Generate a professional LinkedIn-style social media caption.
+8. Use Markdown headings and bullet points.
+"""
+    }
+
+    return prompts.get(tone, prompts["Professional"])
